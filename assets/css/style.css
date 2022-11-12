@@ -896,7 +896,7 @@ button{
 /* ===== Media Queries ===== */
 
 /* ===== Petit Ecran ===== */
-@media screen and (max-width: 390px){
+@media screen and (max-width: 400px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
