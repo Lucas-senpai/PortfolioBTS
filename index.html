@@ -622,9 +622,17 @@
 
                     <form action="https://formsubmit.co/cfcad328b8ba9c1466ae373b1c26f88a" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
+
+                            <!-- AntiSpam -->
+                            <!-- Si se champ est remplis alors le mail n'est pas transmis -->
+                            <input type="text" name="_honey">
+
+                            <!-- Enleve le Captcha for utilisateur -->
+                            <input type="hidden" name="_captcha" value="false">
+
                             <div class="contact__content">
                                 <label for="surname" class="contact__label">Nom :</label>
-                                <input type="text" name="surname" class="contact__input" required>
+                                <input type="text" name="nom" class="contact__input" required>
                             </div>
 
                             <div class="contact__content">
