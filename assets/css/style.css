@@ -896,7 +896,7 @@ button{
 /* ===== Media Queries ===== */
 
 /* ===== Petit Ecran ===== */
-@media screen and (max-width: 420px){
+@media screen and (max-width: 380px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -922,6 +922,10 @@ button{
 
     .qualification__data{
         gap: 0.5rem;
+    }
+
+    .succes{
+        margin-top: 25%;
     }
     
     .services__container{
@@ -958,6 +962,10 @@ button{
         display: grid;
         grid-template-columns: 0.6fr;
         justify-content: center;
+    }
+
+    .succes{
+        margin-top: 10%;
     }
 }
 
@@ -1059,6 +1067,10 @@ button{
     .footer__bg{
         padding: 3rem 0 3rem;
     }
+
+    .succes{
+        margin-top: 0;
+    }
 }
 
 /* ===== Large Ecran ===== */
@@ -1101,7 +1113,7 @@ button{
 }
 
 
-/* Couleur du theme */
+/* ===== Couleur du theme ===== */
 .color__button{
     font-size: 1.1rem;
     color: var(--title-color);
@@ -1198,4 +1210,17 @@ button{
 .color-active-modal{
     opacity: 1;
     visibility: visible;
+}
+
+
+/* ===== Page succes ===== */
+.succes{
+    height: 100vh;
+    padding-top: 15%;
+}
+
+.succes__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
 }
