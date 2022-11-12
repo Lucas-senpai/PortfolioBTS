@@ -625,10 +625,15 @@
 
                             <!-- AntiSpam -->
                             <!-- Si se champ est remplis alors le mail n'est pas transmis -->
-                            <input type="text" name="_honey">
+                            <input type="text" name="_honey" style="display: none;">
 
-                            <!-- Enleve le Captcha for utilisateur -->
+                            <!-- Enleve le Captcha pour utilisateur -->
+                            <!-- On l'enleve parce que si il ne remplis pas le champs
+                                 du dessus donc pas besoin de verifier si c'est un bot -->
                             <input type="hidden" name="_captcha" value="false">
+
+                            <!-- Page de succes si mail envoyer -->
+                            <input type="hidden" name="_next" value="https://lucasgouttenoire.netlify.app/succes.html">
 
                             <div class="contact__content">
                                 <label for="surname" class="contact__label">Nom :</label>
