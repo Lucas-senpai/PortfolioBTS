@@ -896,7 +896,7 @@ button{
 /* ===== Media Queries ===== */
 
 /* ===== Petit Ecran ===== */
-@media screen and (max-width: 410px){
+@media screen and (max-width: 405px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -915,10 +915,6 @@ button{
 
     .skills__title{
         font-size: var(--normal-font-size);
-    }
-
-    .qualification__data{
-        gap: 0.5rem;
     }
 
     .succes{
