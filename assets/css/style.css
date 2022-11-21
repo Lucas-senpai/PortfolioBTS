@@ -291,9 +291,9 @@ img{
 }
 
 .home__social{
-    display: grid !important;
-    grid-template-columns: max-content !important;
-    row-gap: 1rem !important;
+    display: grid contents;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
 }
 
 .home__social-icon{
