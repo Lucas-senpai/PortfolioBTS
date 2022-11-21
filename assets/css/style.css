@@ -291,7 +291,7 @@ img{
 }
 
 .home__social{
-    display: grid contents;
+    display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
 }
