@@ -292,8 +292,8 @@ img{
 
 .home__social{
     display: grid !important;
-    grid-template-columns: max-content;
-    row-gap: 1rem;
+    grid-template-columns: max-content !important;
+    row-gap: 1rem !important;
 }
 
 .home__social-icon{
