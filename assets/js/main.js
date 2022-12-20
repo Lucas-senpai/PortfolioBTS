@@ -227,12 +227,16 @@ themeButton.addEventListener('click', () => {
 
 
 // ===== Send mail message ===== //
-function formulaireOK(formulaire){
+function formulaireOK(){
     var sendOK = document.getElementById('formOK');
     var sendNone = document.getElementById('formNone');
+
+    var nom = document.getElementById("nom").value;
+    var email = document.getElementById("email").value;
+    var objet = document.getElementById("objet").value;
+    var message = document.getElementById("message").value;
     
-    if (formulaire.nom.value == "" || formulaire.email.value == "" || formulaire.objet.value == "" ||
-        formulaire.message.value == ""){
+    if (nom == "" || email == "" || objet == "" || message == ""){
             sendOK.style.display = "none";
             sendNone.style.display = "block";
             Valider();
