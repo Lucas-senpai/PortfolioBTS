@@ -224,3 +224,26 @@ themeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
 })
+
+
+// ===== Send mail message ===== //
+function formulaireOK(formulaire){
+    var sendOK = document.getElementById('formOK');
+    var sendNone = document.getElementById('formNone');
+    
+    if (formulaire.nom.value == "" || formulaire.email.value == "" || formulaire.objet.value == "" ||
+        formulaire.message.value == ""){
+            sendOK.style.display = "none";
+            sendNone.style.display = "block";
+            Valider();
+        }
+    else{
+        sendNone.style.display = "none";
+        sendOK.style.display = "block"; 
+    }
+}
+
+function Valider(){
+    event.preventDefault();
+    return false;
+}

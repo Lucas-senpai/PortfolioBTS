@@ -564,7 +564,7 @@
                                 <h3 class="portfolio__title">Rapport de Stage</h3>
                                 <p class="portfolio__description">Découvrez mes stages dans un rapport détaillé.
                                     par semaine.</p>
-                                <a href="assets/pdf/RapportStage.pdf" target="_blank" class="button button--flex button--small portfolio__button">
+                                <a href="https://drive.google.com/drive/folders/1fNe0WOACckIHYsOiUhWrFjvWO3tBGTeP?usp=share_link" target="_blank" class="button button--flex button--small portfolio__button">
                                     Voir
                                     <i class='bx bx-right-arrow-alt button__icon'></i>
                                 </a>
@@ -609,7 +609,7 @@
 
                 <div class="contact__container container">
                    
-                    <div class="mail">
+                    <div class="center">
                         <div class="contact__information">
                             <i class='bx bx-envelope contact__icon'></i>
     
@@ -620,6 +620,17 @@
                         </div>
                     </div>
                
+                    <div class="mailOK" id="formOK">
+                        <span class="sendMail">
+                            Votre mail a bien été envoyer ! :)
+                        </span>
+                    </div>
+
+                    <div class="mailNone" id="formNone">
+                        <span class="sendMail">
+                            Veuillez remplir les champs ! :/
+                        </span>
+                    </div>
 
                     <form action="https://formsubmit.co/cfcad328b8ba9c1466ae373b1c26f88a" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
@@ -638,26 +649,26 @@
 
                             <div class="contact__content">
                                 <label for="surname" class="contact__label">Nom :</label>
-                                <input type="text" name="nom" class="contact__input" required>
+                                <input type="text" name="nom" class="contact__input">
                             </div>
 
                             <div class="contact__content">
                                 <label for="email" class="contact__label">E-mail :</label>
-                                <input type="email" name="email" class="contact__input" required>
+                                <input type="email" name="email" class="contact__input">
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="objet" class="contact__label">Objet :</label>
-                            <input type="text" name="objet" class="contact__input" required>
+                            <input type="text" name="objet" class="contact__input">
                         </div>
 
                         <div class="contact__content">
                             <label for="message" class="contact__label">Message :</label>
-                            <textarea name="message" cols="0" rows="7" class="contact__input" required></textarea>
+                            <textarea name="message" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
 
-                        <div>
-                            <button type="submit" class="button button--flex">
+                        <div class="envoyer">
+                            <button type="submit" class="button button--flex" onclick="formulaireOK(this.form)">
                                 Envoyer
                                 <i class='bx bx-send button__icon'></i>
                             </button>
