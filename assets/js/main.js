@@ -239,16 +239,10 @@ function formulaireOK(formulaire){
     if (nom == "" || email == "" || objet == "" || message == ""){
             sendOK.style.display = "none";
             sendNone.style.display = "block";
-            Valider();
         }
         else{
             sendNone.style.display = "none";
             sendOK.style.display = "block"; 
             document.formulaire.submit();
     }
-}
-
-function Valider(){
-    event.preventDefault();
-    return false;
 }
