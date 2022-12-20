@@ -227,7 +227,7 @@ themeButton.addEventListener('click', () => {
 
 
 // ===== Send mail message ===== //
-function formulaireOK(){
+function formulaireOK(formulaire){
     var sendOK = document.getElementById('formOK');
     var sendNone = document.getElementById('formNone');
 
@@ -241,9 +241,10 @@ function formulaireOK(){
             sendNone.style.display = "block";
             Valider();
         }
-    else{
-        sendNone.style.display = "none";
-        sendOK.style.display = "block"; 
+        else{
+            sendNone.style.display = "none";
+            sendOK.style.display = "block"; 
+            document.formulaire.submit();
     }
 }
 

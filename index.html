@@ -632,7 +632,7 @@
                         </span>
                     </div>
 
-                    <form action="https://formsubmit.co/cfcad328b8ba9c1466ae373b1c26f88a" method="POST" class="contact__form grid">
+                    <form action="https://formsubmit.co/cfcad328b8ba9c1466ae373b1c26f88a" method="POST" class="contact__form grid" name="formulaire">
                         <div class="contact__inputs grid">
 
                             <!-- AntiSpam -->
@@ -668,7 +668,7 @@
                         </div>
 
                         <div class="envoyer">
-                            <a href="#contact" class="button button--flex" onclick="formulaireOK()">
+                            <a href="#contact" type="submit" class="button button--flex" onclick="formulaireOK(this.form)">
                                 Envoyer
                                 <i class='bx bx-send button__icon'></i>
                             </a>
