@@ -1172,7 +1172,6 @@ button{
 
 .color__modal-services{
     grid-template-columns: repeat(5, 1fr);
-    row-gap: 0.2rem;
 }
 
 .color__modal-service{
@@ -1204,7 +1203,7 @@ button{
 }
 
 .color__modal-services li:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .color__modal-title{

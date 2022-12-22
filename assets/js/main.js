@@ -240,9 +240,9 @@ function formulaireOK(formulaire){
             sendOK.style.display = "none";
             sendNone.style.display = "block";
         }
-        else{
-            sendNone.style.display = "none";
-            sendOK.style.display = "block"; 
-            document.formulaire.submit();
+    else{
+        sendNone.style.display = "none";
+        sendOK.style.display = "block"; 
+        document.formulaire.submit();
     }
 }
