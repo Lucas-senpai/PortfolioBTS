@@ -1246,21 +1246,3 @@ button{
     opacity: 1;
     visibility: visible;
 }
-
-
-/* ===== Page succes ===== */
-.succes{
-    height: 100vh;
-    padding-top: 15%;
-    background-color: hsl(var(--hue-color), 29%, 16%);
-}
-
-.titre{
-    color: #fff;
-}
-
-.succes__button{
-    display: flex;
-    justify-content: center;
-    margin-top: 4%;
-}
