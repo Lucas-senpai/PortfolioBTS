@@ -517,26 +517,41 @@ button{
 
 /* ===== Skills 1 ===== */
 .skills__html{
-    width: 70%;
+    width: 60%;
 }
 .skills__css{
-    width: 65%;
+    width: 40%;
 }
 .skills__bootstrap{
     width: 40%;
 }
 
 /* ===== Skills 2 ===== */
-.skills__php{
-    width: 60%;
+.skills__csharp{
+    width: 20%;
 }
-.skills__js{
-    width: 45%;
-}
-.skills__python{
-    width: 50%;
+.skills__unity{
+    width: 5%;
 }
 
+/* ===== Skills 3 ===== */
+.skills__php{
+    width: 45%;
+}
+.skills__js{
+    width: 25%;
+}
+.skills__cpp{
+    width: 10%;
+}
+
+/* ===== Skills 4 ===== */
+.skills__linux{
+    width: 15%;
+}
+.skills__windows{
+    width: 5%;
+}
 
 .skills__close .skills__list{
     height: 0;
@@ -755,7 +770,7 @@ button{
 }
 
 .portfolio__button:hover .button__icon{
-    transform: translateX(0.25rem);
+    transform: translateX(0.40rem);
 }
 
 .swiper-button-prev::after,
