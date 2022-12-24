@@ -124,6 +124,8 @@ var color1 = document.getElementById('red'),
     color4 = document.getElementById('blue'),
     color5 = document.getElementById('pink');
 
+const colorTheme = localStorage.getItem('couleur');
+
 window.onload = function(){
     color1.onclick = changecolor;
     color2.onclick = changecolor;
@@ -135,6 +137,23 @@ window.onload = function(){
 function changecolor(){
     let color = this.getAttribute('data-color');
     document.querySelector(':root').style.setProperty('--hue-color', color)
+    localStorage.setItem('couleur', this.id);
+}
+
+if(colorTheme == 'red'){
+    document.querySelector(':root').style.setProperty('--hue-color', 0)
+}
+if(colorTheme == 'green'){
+    document.querySelector(':root').style.setProperty('--hue-color', 140)
+}
+if(colorTheme == 'violet'){
+    document.querySelector(':root').style.setProperty('--hue-color', 250)
+}
+if(colorTheme == 'blue'){
+    document.querySelector(':root').style.setProperty('--hue-color', 220)
+}
+if(colorTheme == 'pink'){
+    document.querySelector(':root').style.setProperty('--hue-color', 290)
 }
 
 
@@ -218,11 +237,29 @@ const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
 
-// Click sur icon = activé ou desactivé le theme //
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Ajouté / enlever le theme et l'icon //
+    // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
 
