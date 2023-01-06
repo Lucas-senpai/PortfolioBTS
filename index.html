@@ -35,8 +35,8 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bx-file nav__icon'></i> Compétences
+                            <a href="#parcours" class="nav__link">
+                                <i class='bx bx-file nav__icon'></i> Parcours
                             </a>
                         </li>
                         <li class="nav__item">
@@ -115,7 +115,7 @@
                                     85.9,-31.8,84.2,-45.8,77.7C-59.8,71.2,-72,59.9,-80.1,46.1C-88.3,32.4,-92.5,16.2,-92.1,
                                     0.2C-91.8,-15.8,-86.9,-31.5,-78.7,-45.3C-70.5,-59.1,-59.1,-70.9,-45.5,-78C-31.8,-85,
                                     -15.9,-87.4,0.3,-88C16.6,-88.6,33.2,-87.4,45.9,-79.8Z" transform="translate(100 100)" />
-                                    <image class="home__blob-img" x='10' y='16' xlink:href="assets/img/profil.png"/>
+                                    <image class="home__blob-img" x='0' y='-15' xlink:href="assets/img/home.png"/>
                                 </g>
                             </svg>
                         </div>
@@ -143,12 +143,12 @@
             <section class="about section" id="about">
                 <h2 class="section__title">Mon Profil</h2>
                 <span class="section__subtitle">Présentation</span>
-                <div class="about__container container">
+                <div class="about__container container grid">
+                    <img src="assets/img/profil.png" alt="" class="about__img">
 
                     <div class="about__data">
-                        <p class="about__description">Passionné par les nouvelles technologies et l'informatique. Je suis actuellement en BTS SIO 
-                            (Services Informatiques aux Organisations) option SLAM (solutions logicielles et application métier).
-                            J'aime faire des sites web ou des jeux, très curieux, j'aime apprendre mais seulement ce qui m'intéresse.
+                        <p class="about__description">Passionné par les nouvelles technologies et l'informatique.
+                            J'aime faire des sites web ou des jeux, très curieux, j'aime apprendre des nouvelles choses.
                         </p>
 
                         <div class="about__info">
@@ -177,186 +177,8 @@
                 </div>
             </section>
 
-            <!-- ===== Skills ===== -->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Compétences</h2>
-                <span class="section__subtitle">Mon niveau technique</span>
-                <div class="skills__container container grid">
-                    <div>
-                        <!-- ===== Skill 1 ===== -->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class='bx bx-code-curly skills__icon'></i>
-
-                                <div>
-                                    <h1 class="skills__title">Dévloppement Frontend</h1>
-                                    <span class="skills__subtitle">Depuis 1 an</span>
-                                </div>
-
-                                <i class='bx bx-caret-down skills__arrow'></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__number">40%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Bootstrap</h3>
-                                        <span class="skills__number">40%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__bootstrap"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                         <!-- ===== Skill 2 ===== -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class='bx bx-window-alt skills__icon'></i>
-
-                                <div>
-                                    <h1 class="skills__title">Dévloppement Logiciel</h1>
-                                    <span class="skills__subtitle">Depuis 1 ans</span>
-                                </div>
-
-                                <i class='bx bx-caret-down skills__arrow'></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">C#</h3>
-                                        <span class="skills__number">20%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__csharp"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Untiy</h3>
-                                        <span class="skills__number">5%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__unity"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div> <!--  Mettre dans la meme div (en haut) pour faire 2 ligne 1 colonne -->
-                        <!-- ===== Skill 3 ===== -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class='bx bx-code-alt skills__icon'></i>
-
-                                <div>
-                                    <h1 class="skills__title">Dévloppement Backend</h1>
-                                    <span class="skills__subtitle">Depuis 1 ans</span>
-                                </div>
-
-                                <i class='bx bx-caret-down skills__arrow'></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">PHP</h3>
-                                        <span class="skills__number">45%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__php"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__number">25%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">C++</h3>
-                                        <span class="skills__number">10%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__cpp"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ===== Skill 4 ===== -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class='bx bx-laptop skills__icon'></i>
-
-                                <div>
-                                    <h1 class="skills__title">Système d'Exploitation</h1>
-                                    <span class="skills__subtitle">Depuis 1 ans</span>
-                                </div>
-
-                                <i class='bx bx-caret-down skills__arrow'></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Linux</h3>
-                                        <span class="skills__number">15%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__linux"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Windows</h3>
-                                        <span class="skills__number">5%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__windows"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    
-                </div>
-            </section>
-
             <!-- ===== Qualification ===== -->
-            <section class="qualification section">
+            <section class="qualification section" id="parcours">
                 <h2 class="section__title">Parcours</h2>
                 <span class="section__subtitle">Scolaire et Professionnel</span>
 
@@ -659,20 +481,7 @@
                                 </a>
                             </div>
                         </div>
-
-                         <!-- ===== Portfolio 5 ===== -->
-                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio5.jpg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Mes Projets</h3>
-                                <p class="portfolio__description">Voir mes projets réalisés au cours de mes études.</p>
-                                <a href="https://drive.google.com/drive/folders/1XCx9Meb7a08g7vlavqk-9Spq8CzRcI7L?usp=sharing" target="_blank" class="button button--flex button--small portfolio__button">
-                                    Voir
-                                    <i class='bx bx-right-arrow-alt button__icon'></i>
-                                </a>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <!-- Fleche de navigation -->
