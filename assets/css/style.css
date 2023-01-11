@@ -275,11 +275,15 @@ img{
 
 /* ===== Ombre menu ===== */
 .scroll-header{
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.30);
 }
 
 
 /* ===== Home ===== */
+.home{
+    height: 100vh;
+}
+
 .home__container{
     gap: 1rem;
 }
@@ -343,7 +347,7 @@ img{
 }
 
 .home__scroll-button:hover{
-    transform: translateY(0.25rem);
+    transform: translateY(0.6rem);
 }
 
 .home__scroll-mouse{
@@ -840,6 +844,9 @@ button{
         column-gap: 0;
     }
 
+    .home{
+        padding-top: 100px;
+    }
     .home__content{
         grid-template-columns: 0.25fr 3fr;
     }
@@ -858,6 +865,9 @@ button{
 
 /* ===== Moyen Ecran ===== */
 @media screen and (min-width: 568px){
+    .home{
+        padding-top: 200px;
+    }
     .home__content{
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -892,7 +902,7 @@ button{
     }
 
     .section{
-        padding: 6rem 0 2rem;
+        padding: 6rem 0rem 4rem;
     }
     .section__subtitle{
         margin-bottom: 4rem;
@@ -928,6 +938,9 @@ button{
         margin: 0;
     }
 
+    .home{
+        padding-top: 200px;
+    }
     .home__container{
         row-gap: 5rem;
     }
