@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== icons ===== -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== Swiper CSS ===== -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+                
+        <!-- ===== Style CSS ===== -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- ===== Icon ===== -->
+        <link rel="shortcut icon" type="image/png" href="assets/img/icon.ico"/>
+
+        <title>GOUTTENOIRE Lucas | Portfolio</title>   
+    </head>
+    <body>
+        <!-- ===== Header ===== -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">Lucas</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt-2 nav__icon'></i> Accueil
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i> Profil
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#parcours" class="nav__link">
+                                <i class='bx bx-compass nav__icon'></i> Parcours
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class='bx bx-briefcase nav__icon'></i> Savoir-Faire
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class='bx bx-folder nav__icon'></i> Projets
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-send nav__icon'></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class='bx bx-x nav__close' id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme Color -->
+                    <i class='bx bx-palette color__button'></i> 
+                    <div class="color__modal">
+                        <div class="color__modal-content">
+                            <h4 class="color__modal-title">Couleur du site</h4>
+                            <i class='bx bx-x color__modal-close'></i>
+                            <ul class="color__modal-services grid">
+                                <li class="color__modal-service" data-color="0" id="red"></li>
+                                <li class="color__modal-service" data-color="140" id="green"></li>
+                                <li class="color__modal-service" data-color="220" id="blue"></li>
+                                <li class="color__modal-service" data-color="250" id="violet"></li>
+                                <li class="color__modal-service" data-color="290" id="pink"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Theme Blanc/Sombre -->
+                    <i class='bx bx-moon change-theme' id="theme-button" ></i>
+                    <!-- Show / Hide menu -->
+                    <i class='bx bx-grid-alt nav__toggle' id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ===== Main ===== -->
+        <main class="main">
+
+            <!-- ===== Home ===== -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <!-- Mon LinkedIn -->
+                            <a href="https://www.linkedin.com/in/lucas-gouttenoire/" target="_blank" class="home__social-icon">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <!-- Mon GitHub -->
+                            <a href="https://github.com/Lucas-senpai" target="_blank" class="home__social-icon">
+                                <i class='bx bxl-github' ></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M45.9,-79.8C58.6,-72.1,67.4,-58.1,75.2,-43.7C83.1,-29.4,89.9,-14.7,90.9,0.6C92,
+                                    15.9,87.3,31.8,78.6,44.7C70,57.6,57.3,67.5,43.5,74.1C29.8,80.7,14.9,84.1,-0.5,85C-15.9,
+                                    85.9,-31.8,84.2,-45.8,77.7C-59.8,71.2,-72,59.9,-80.1,46.1C-88.3,32.4,-92.5,16.2,-92.1,
+                                    0.2C-91.8,-15.8,-86.9,-31.5,-78.7,-45.3C-70.5,-59.1,-59.1,-70.9,-45.5,-78C-31.8,-85,
+                                    -15.9,-87.4,0.3,-88C16.6,-88.6,33.2,-87.4,45.9,-79.8Z" transform="translate(100 100)" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M45.9,-79.8C58.6,-72.1,67.4,-58.1,75.2,-43.7C83.1,-29.4,89.9,-14.7,90.9,0.6C92,
+                                    15.9,87.3,31.8,78.6,44.7C70,57.6,57.3,67.5,43.5,74.1C29.8,80.7,14.9,84.1,-0.5,85C-15.9,
+                                    85.9,-31.8,84.2,-45.8,77.7C-59.8,71.2,-72,59.9,-80.1,46.1C-88.3,32.4,-92.5,16.2,-92.1,
+                                    0.2C-91.8,-15.8,-86.9,-31.5,-78.7,-45.3C-70.5,-59.1,-59.1,-70.9,-45.5,-78C-31.8,-85,
+                                    -15.9,-87.4,0.3,-88C16.6,-88.6,33.2,-87.4,45.9,-79.8Z" transform="translate(100 100)" />
+                                    <image class="home__blob-img" x='0' y='-15' xlink:href="assets/img/home.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">GOUTTENOIRE Lucas</h1>
+                            <h3 class="home__subtitle">Étudiant en informatique</h3>
+                            <p class="home__description">Découvrez mon profil à travers mon site.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contactez-Moi  <i class='bx bx-send button__icon'></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class='bx bx-mouse home__scroll-mouse'></i>
+                            <span class="home__scroll-name">En savoir plus</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== Profil ===== -->
+            <section class="about section" id="about">
+                <h2 class="section__title">Mon Profil</h2>
+                <span class="section__subtitle">Présentation</span>
+                <div class="about__container container grid">
+                    <img src="assets/img/profil.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">Passionné par les nouvelles technologies et l'informatique.
+                            J'aime faire des sites web ou des jeux, très curieux, j'aime apprendre des nouvelles choses.
+                        </p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">+03</span>
+                                <span class="about__info-name">Années <br /> Expériences</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">+04</span>
+                                <span class="about__info-name">Projets <br /> Complétés</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">+02</span>
+                                <span class="about__info-name">Stage <br /> Entreprise</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a href="assets/pdf/GOUTTENOIRE_Lucas_CV.pdf" target="_blank" class="button button--flex">
+                                Téléchargez mon CV <i class='bx bx-download button__icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== Qualification ===== -->
+            <section class="qualification section" id="parcours">
+                <h2 class="section__title">Parcours</h2>
+                <span class="section__subtitle">Scolaire et Professionnel</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class='bx bxs-graduation qualification__icon'></i>
+                            Étude
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class='bx bxs-briefcase qualification__icon'></i>
+                            Entreprise
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!-- ===== Qualif content 1 ===== -->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!-- ===== Qualif 1 ===== -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">BTS SIO - SLAM</h3>
+                                    <span class="qualification__subtitle">Loire - Rive-de-Gier</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bx-calendar'></i>
+                                        2021 - 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!-- ===== Qualif 2 ===== -->
+                            <div class="qualification__data">
+                                <div></div>
+                                
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                               
+                                <div>
+                                    <h3 class="qualification__title">Bac STI2D</h3>
+                                    <span class="qualification__subtitle">Rhône - Givors</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bx-calendar'></i>
+                                        2019 - 2021
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===== Qualif 3 ===== -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Brevet des Collèges</h3>
+                                    <span class="qualification__subtitle">Rhône - Mornant</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bx-calendar'></i>
+                                        2014 - 2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ===== Qualif content 2 ===== -->
+                        <div class="qualification__content" data-content id="work">
+                            <!-- ===== Qualif 1 ===== -->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Stage 2ème Année</h3>
+                                    <span class="qualification__subtitle">Collège Pierre de Ronsard</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bx-calendar'></i>
+                                        Novembre 2022 - Décembre 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!-- ===== Qualif 2 ===== -->
+                            <div class="qualification__data">
+                                <div></div>
+                                
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                               
+                                <div>
+                                    <h3 class="qualification__title">Stage 1er Année</h3>
+                                    <span class="qualification__subtitle">Saint Martin Omnisports Basket</span>
+                                    <div class="qualification__calendar">
+                                        <i class='bx bx-calendar'></i>
+                                        Mai 2022 - Juillet 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== Services ===== -->
+            <section class="services section" id="services">
+                <h2 class="section__title">Savoir-Faire</h2>
+                <span class="section__subtitle">Mes capacités</span>
+                
+                <div class="services__container container grid">
+                    <!-- ===== Services 1 ===== -->
+                    <div class="services__content">
+                        <div>
+                            <i class='bx bx-laptop services__icon'></i>
+                            <h3 class="services__title">Projets <br> Réalisés</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            Voir Plus
+                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Projets <br> Réalisés</h4>
+                                <i class='bx bx-x services__modal-close'></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>Portfolio HTML/CSS/JS.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>Pokédex Web.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>Jeu 2D sur Unity.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ===== Services 2 ===== -->
+                    <div class="services__content">
+                        <div>
+                            <i class='bx bx-code-block services__icon'></i>
+                            <h3 class="services__title">Développement <br> Web</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            Voir Plus
+                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Développement <br> Web</h4>
+                                <i class='bx bx-x services__modal-close'></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>HTML/CSS, JavaScript, PHP, SQL.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>Framework Laravel.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>CMS : WordPress/Spip.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== Services 3 ===== -->
+                    <div class="services__content">
+                        <div>
+                            <i class='bx bx-data services__icon'></i>
+                            <h3 class="services__title">Gestion de<br> BDD</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            Voir Plus
+                            <i class='bx bx-right-arrow-alt button__icon'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Gestion de <br> Bases de Données</h4>
+                                <i class='bx bx-x services__modal-close'></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>Création et gestion des bases.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>PhpMyAdmin et MySQL.</p>
+                                    </li>
+
+                                    <li class="services__modal-service">
+                                        <i class='bx bx-check-circle services__modal-icon'></i>
+                                        <p>Traitement des données.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <!-- ===== Portfolio ===== -->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Projets</h2>
+                <span class="section__subtitle">Du BTS SIO</span>
+                
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- ===== Portfolio 1 ===== -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="Mp3Website/public/index.html" target="_blank">
+                                <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                            </a>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Convertisseur YouTube</h3>
+                                <p class="portfolio__description">Téléchargez vos musiques sans pub 
+                                    et facilement grace à leurs URL.</p>
+                                <a href="Mp3Website/public/index.html" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Voir
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ===== Portfolio 2 ===== -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="assets/pdf/Documentation_SIte.pdf" target="_blank">
+                                <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                            </a>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Site E-commerce</h3>
+                                <p class="portfolio__description">Woody4Shop, un site de vente de produits 
+                                    en bois en tout genre.</p>
+                                <a href="assets/pdf/Documentation_SIte.pdf" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Voir
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ===== Portfolio 3 ===== -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="assets/pdf/VeilleTechnologique.pdf" target="_blank">
+                                <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                            </a>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Veille Technologique</h3>
+                                <p class="portfolio__description">Découvrez ma veille technologique sur 
+                                    le thème des robots.</p>
+                                <a href="assets/pdf/VeilleTechnologique.pdf" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Voir
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ===== Portfolio 4 ===== -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="assets/pdf/TableaudeCompétence.pdf" target="_blank">
+                                <img src="assets/img/portfolio4.jpg" alt="" class="portfolio__img">
+                            </a>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Tableau de Compétences</h3>
+                                <p class="portfolio__description">Toutes mes compétences acquises au cours de ma  
+                                    formation.</p>
+                                <a href="assets/pdf/TableaudeCompétence.pdf" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Voir
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ===== Portfolio 5 ===== -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="https://drive.google.com/drive/folders/1fNe0WOACckIHYsOiUhWrFjvWO3tBGTeP?usp=sharing" target="_blank">
+                                <img src="assets/img/portfolio5.jpg" alt="" class="portfolio__img">
+                            </a>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Rapports de Stages</h3>
+                                <p class="portfolio__description">Découvrez mes stages dans un rapport détaillé,
+                                    par semaine.</p>
+                                <a href="https://drive.google.com/drive/folders/1fNe0WOACckIHYsOiUhWrFjvWO3tBGTeP?usp=sharing" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Voir
+                                    <i class='bx bx-right-arrow-alt button__icon'></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Fleche de navigation -->
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right swiper-portfolio-icon'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left swiper-portfolio-icon' ></i>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination">
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===== Contact ===== -->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact</h2>
+                <span class="section__subtitle">Contactez-moi !</span>
+
+                <div class="contact__container container">
+                   
+                    <div class="center">
+                        <div class="contact__information">
+                            <i class='bx bx-envelope contact__icon'></i>
+    
+                            <div>
+                                <h3 class="contact__title">Mon e-mail</h3>
+                                <span class="contact__subtitle">lucas.gouttenoire.pro@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="mailOK" id="formOK">
+                        <span class="sendMail">
+                            Votre mail a bien été envoyer ! :)
+                        </span>
+                    </div>
+
+                    <div class="mailNone" id="formNone">
+                        <span class="sendMail">
+                            Veuillez remplir tous les champs ! :/
+                        </span>
+                    </div>
+
+                    <form action="https://formsubmit.co/cfcad328b8ba9c1466ae373b1c26f88a" method="POST" class="contact__form grid" name="formulaire">
+                        <div class="contact__inputs grid">
+
+                            <!-- AntiSpam -->
+                            <!-- Si se champ est remplis alors le mail n'est pas transmis -->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!-- Enleve le Captcha pour utilisateur -->
+                            <!-- On l'enleve parce que si il ne remplis pas le champs
+                                 du dessus donc pas besoin de verifier si c'est un bot -->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <input type="hidden" name="_next" value="https://gouttenoirelucas.netlify.app/">
+
+                            <div class="contact__content">
+                                <label for="surname" class="contact__label">Nom :</label>
+                                <input type="text" name="nom" id="nom" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">E-mail :</label>
+                                <input type="email" name="email" id="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="objet" class="contact__label">Objet :</label>
+                            <input type="text" name="objet" id="objet" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="message" class="contact__label">Message :</label>
+                            <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div class="envoyer">
+                            <a href="#contact" type="submit" class="button button--flex" onclick="formulaireOK(this.form)">
+                                Envoyer
+                                <i class='bx bx-send button__icon'></i>
+                            </a>
+                        </div>
+                        
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===== Footer ===== -->
+        <footer class="footer">
+            <div class="footer__bg">
+                <p class="footer__copy">&#169; GOUTTENOIRE Lucas || Portfolio 2023</p>
+            </div>
+        </footer>
+
+        <!-- ===== Scroll Top ===== -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+
+        <!-- ===== Swiper ===== -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!-- ===== JavaScript Main ===== -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
