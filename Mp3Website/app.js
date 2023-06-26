@@ -7,7 +7,7 @@ const app = express();  // Création d'une instance de l'application Express
 app.use(express.static('public'));  // Définition du répertoire "public" pour les fichiers statiques
 app.use(express.json());  // Activation de l'analyseur de corps de requête JSON
 
-app.post('/download', async (req, res) => {
+app.post('https://gouttenoirelucas.netlify.app/mp3website/public/download', async (req, res) => {
   const url = req.body.url;  // Récupération de l'URL de la vidéo à télécharger depuis le corps de la requête
 
   try {
