@@ -1,5 +1,5 @@
 # PortfolioBTS
 
-My personal website for my school !
+My personal website !
 
 Did I get my licence in 2023 ?
