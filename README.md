@@ -2,5 +2,4 @@
 
 My personal website !
 
-Did I get my BTS in 2023 ?
-Ps: I got it <(￣︶￣)> !!!
+Did I get my licence in 2023 ?

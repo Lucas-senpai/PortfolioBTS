@@ -23,7 +23,7 @@
         <!-- ===== Header ===== -->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="https://gouttenoirelucas.netlify.app/" class="nav__logo">Lucas</a>
+                <a href="#home" class="nav__logo">Lucas</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -50,11 +50,6 @@
                         <li class="nav__item">
                             <a href="#portfolio" class="nav__link">
                                 <i class='bx bx-folder nav__icon'></i> Projets
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class='bx bx-send nav__icon'></i> Contact
                             </a>
                         </li>
                     </ul>
@@ -127,7 +122,7 @@
                             <h1 class="home__title">GOUTTENOIRE Lucas</h1>
                             <h3 class="home__subtitle">Étudiant en informatique</h3>
                             <p class="home__description">Découvrez mon profil à travers mon site.</p>
-                            <a href="#contact" class="button button--flex">
+                            <a href="mailto:lucas.gouttenoire.pro@gmail.com" target="_blank" class="button button--flex">
                                 Contactez-Moi  <i class='bx bx-send button__icon'></i>
                             </a>
                         </div>
@@ -490,87 +485,12 @@
                 </div>
             </section>
 
-
-            <!-- ===== Contact ===== -->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact</h2>
-                <span class="section__subtitle">Contactez-moi !</span>
-
-                <div class="contact__container container">
-                   
-                    <div class="center">
-                        <div class="contact__information">
-                            <i class='bx bx-envelope contact__icon'></i>
-    
-                            <div>
-                                <h3 class="contact__title">Mon e-mail</h3>
-                                <span class="contact__subtitle">lucas.gouttenoire.pro@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-               
-                    <div class="mailOK" id="formOK">
-                        <span class="sendMail">
-                            Votre mail a bien été envoyer ! :)
-                        </span>
-                    </div>
-
-                    <div class="mailNone" id="formNone">
-                        <span class="sendMail">
-                            Veuillez remplir tous les champs ! :/
-                        </span>
-                    </div>
-
-                    <form action="https://formsubmit.co/cfcad328b8ba9c1466ae373b1c26f88a" method="POST" class="contact__form grid" name="formulaire">
-                        <div class="contact__inputs grid">
-
-                            <!-- AntiSpam -->
-                            <!-- Si se champ est remplis alors le mail n'est pas transmis -->
-                            <input type="text" name="_honey" style="display: none;">
-
-                            <!-- Enleve le Captcha pour utilisateur -->
-                            <!-- On l'enleve parce que si il ne remplis pas le champs
-                                 du dessus donc pas besoin de verifier si c'est un bot -->
-                            <input type="hidden" name="_captcha" value="false">
-
-                            <input type="hidden" name="_next" value="https://gouttenoirelucas.netlify.app/">
-
-                            <div class="contact__content">
-                                <label for="surname" class="contact__label">Nom :</label>
-                                <input type="text" name="nom" id="nom" class="contact__input">
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="email" class="contact__label">E-mail :</label>
-                                <input type="email" name="email" id="email" class="contact__input">
-                            </div>
-                        </div>
-                        <div class="contact__content">
-                            <label for="objet" class="contact__label">Objet :</label>
-                            <input type="text" name="objet" id="objet" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="message" class="contact__label">Message :</label>
-                            <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-
-                        <div class="envoyer">
-                            <a href="#contact" type="submit" class="button button--flex" onclick="formulaireOK(this.form)">
-                                Envoyer
-                                <i class='bx bx-send button__icon'></i>
-                            </a>
-                        </div>
-                        
-                    </form>
-                </div>
-            </section>
         </main>
 
         <!-- ===== Footer ===== -->
         <footer class="footer">
             <div class="footer__bg">
-                <p class="footer__copy">&#169; GOUTTENOIRE Lucas || Portfolio 2023</p>
+                <p class="footer__copy">&#169; GOUTTENOIRE Lucas || Portfolio 2024</p>
             </div>
         </footer>
 

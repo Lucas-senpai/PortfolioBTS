@@ -30,26 +30,6 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-/* ===== Ouverture des skills ===== */
-const skillsContent = document.getElementsByClassName('skills__content'),
-      skillsHeader = document.querySelectorAll('.skills__header')
-
-function toggleSkills(){
-    let itemClass = this.parentNode.className
-
-    for(i=0; i<skillsContent.length; i++){
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-    if(itemClass === 'skills__content skills__close'){
-        this.parentNode.className = 'skills__content skills__open'
-    }
-}
-
-skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
-})
-
-
 /* ===== Qualification tabs ===== */
 const tabs = document.querySelectorAll('[data-target]'),
         tabContents = document.querySelectorAll('[data-content]')
@@ -173,25 +153,6 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
 });
 
 
-/* ===== Témoignage Swiper ===== */
-let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-    breakpoints:{
-        568:{
-            slidesPerView: 2,
-        }
-    }
-});
-
-
 /* ===== Active link Navbar ===== */
 const sections = document.querySelectorAll('section[id]')
 
@@ -261,25 +222,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-
-// ===== Send mail message ===== //
-function formulaireOK(formulaire){
-    var sendOK = document.getElementById('formOK');
-    var sendNone = document.getElementById('formNone');
-
-    var nom = document.getElementById("nom").value;
-    var email = document.getElementById("email").value;
-    var objet = document.getElementById("objet").value;
-    var message = document.getElementById("message").value;
-    
-    if (nom == "" || email == "" || objet == "" || message == ""){
-            sendOK.style.display = "none";
-            sendNone.style.display = "block";
-        }
-    else{
-        sendNone.style.display = "none";
-        sendOK.style.display = "block"; 
-        document.formulaire.submit();
-    }
-}
